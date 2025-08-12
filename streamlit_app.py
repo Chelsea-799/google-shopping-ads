@@ -58,12 +58,35 @@ def main() -> None:
 
     with st.sidebar:
         st.markdown("**Xem giao diện**")
-        height = st.slider("Chiều cao khung nhúng (px)", min_value=800, max_value=3000, value=1600, step=100)
-        width = st.slider("Chiều rộng khung nhúng (px)", min_value=360, max_value=1600, value=1200, step=40)
-        st.caption("Tip: PC ~1200px, Mobile ~380–420px. Dùng thanh cuộn trong khung để xem đầy đủ nội dung.")
+        fullscreen = st.checkbox("Chế độ toàn màn hình (full width • full height)", value=False)
+        height = st.slider("Chiều cao khung nhúng (px)", min_value=800, max_value=3000, value=1600, step=100, disabled=fullscreen)
+        width = st.slider("Chiều rộng khung nhúng (px)", min_value=360, max_value=1600, value=1200, step=40, disabled=fullscreen)
+        st.caption("Tip: PC ~1200px, Mobile ~380–420px. Bật 'toàn màn hình' để chiếm toàn bộ khung trình duyệt.")
+
+    if fullscreen:
+        st.markdown(
+            """
+            <style>
+            [data-testid="stSidebar"] { display: none; }
+            .block-container { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+            section.main > div { padding-left: 0 !important; padding-right: 0 !important; }
+            /* Make the HTML component iframe fill the viewport */
+            div[data-testid="stIFrame"] > iframe {
+              position: fixed; /* overlay to use the whole viewport */
+              inset: 0 0 0 0;
+              width: 100vw !important;
+              height: 100vh !important;
+              border: 0 !important;
+            }
+            html, body, .stApp { overflow: hidden; }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
 
     # Render full HTML (including <html> .. </html>) inside component iframe
-    st_html(html_inlined, height=height, width=width, scrolling=True)
+    # Width/height will be overridden by CSS in fullscreen mode
+    st_html(html_inlined, height=(height if not fullscreen else 1000), width=(width if not fullscreen else 1000), scrolling=True)
 
 
 if __name__ == "__main__":

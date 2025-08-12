@@ -54,7 +54,7 @@ body {
 .controls { display: flex; gap: 8px; }
 
 .container {
-  width: min(1200px, 94vw);
+  width: 100%;
   margin: 24px auto 80px;
   display: grid;
   grid-template-columns: 1fr;
