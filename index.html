@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Google Shopping Ads – Dark Thinker</title>
+    <meta name="description" content="Giao diện darkmode để lên quy trình giảng dạy Google Shopping Ads: chiến lược, tối ưu, đo lường, và lộ trình 14 ngày." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">🧠</div>
+        <div class="titles">
+          <h1>GOOGLE ADS THỐNG TRỊ</h1>
+          <p class="subtitle">Shopping Campaigns that Convert</p>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="expandAllBtn" class="btn ghost">Mở rộng tất cả</button>
+        <button id="collapseAllBtn" class="btn ghost">Thu gọn tất cả</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- MỤC TIÊU -->
+      <section class="card" id="muc-tieu" data-accent="blue">
+        <div class="card-header">
+          <h2>MỤC TIÊU</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#muc-tieu-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#muc-tieu-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="muc-tieu-content" hidden>
+          <ul>
+            <li>Giảm CPC, tăng vị trí bằng tối ưu thuật toán (không chỉ tăng bid)</li>
+            <li>Tối đa lợi nhuận từ sản phẩm & từ khóa đã chứng minh hiệu quả</li>
+            <li>Bám công thức: Ad Rank = Bid × Quality Score</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="muc-tieu-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/google-ads/answer/6167122" target="_blank" rel="noopener">About Ad Rank (Google Ads Help)</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/6167122?hl=en#quality_score" target="_blank" rel="noopener">Quality Score factors</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CHIẾN LƯỢC PHỐI HỢP -->
+      <section class="card" id="chien-luoc" data-accent="green">
+        <div class="card-header">
+          <h2>CHIẾN LƯỢC PHỐI HỢP</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#chien-luoc-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#chien-luoc-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="chien-luoc-content" hidden>
+          <ul>
+            <li>PMAX = Thăm dò (prospecting) → tìm khách hàng mới, sản phẩm/từ khóa tiềm năng</li>
+            <li>Standard Shopping = Khai thác (harvesting) → tối ưu sản phẩm thắng, kiểm soát bid chính xác</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="chien-luoc-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/google-ads/answer/10724816" target="_blank" rel="noopener">About Performance Max</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/6275317" target="_blank" rel="noopener">About Standard Shopping campaigns</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SEARCH ADS (Tối ưu Quality Score) -->
+      <section class="card" id="search-ads" data-accent="yellow">
+        <div class="card-header">
+          <h2>SEARCH ADS (Tối ưu Quality Score)</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#search-ads-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#search-ads-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="search-ads-content" hidden>
+          <ol>
+            <li>
+              <strong>Expected CTR (CTR dự kiến)</strong>
+              <ul>
+                <li>Tiêu đề chứa TỪ KHÓA CHÍNH (H1)</li>
+                <li>Từ quyền lực: “Cao cấp”, “Đảm bảo”, “Tiết kiệm 30%”, “5⭐”</li>
+                <li>Thêm ưu đãi/khẩn cấp + bằng chứng xã hội (reviews, bán chạy)</li>
+                <li>A/B test nhiều RSAs → giữ biến thể có CTR cao</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Ad Relevance (Mức độ liên quan)</strong>
+              <ul>
+                <li>Cấu trúc SKAG/nhóm chặt (1 loại SP/nhóm)</li>
+                <li>Từ khóa tìm thấy gì → tiêu đề nói đúng “điều đó”</li>
+                <li>Không trộn nhiều loại SP trong cùng ad group (khó kiểm soát CPC)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Landing Page Experience (Trải nghiệm trang đích)</strong>
+              <ul>
+                <li>“3 giây đầu”: nhìn thấy cùng tiêu đề/từ khóa + nút MUA rõ</li>
+                <li>Trang tùy biến theo từ khóa (ví dụ PCOS weight loss → nội dung bám intent)</li>
+                <li>Mobile first, tải &lt; 2.5s, bảo mật, UI rõ ràng</li>
+                <li>Nội dung bổ sung theo intent (FAQ, lợi ích, chứng thực)</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="card-sources" id="search-ads-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/google-ads/answer/6167122" target="_blank" rel="noopener">Quality Score and its components</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/9261253" target="_blank" rel="noopener">RSA best practices</a></li>
+            <li><a href="https://web.dev/vitals/" target="_blank" rel="noopener">Core Web Vitals (web.dev)</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SHOPPING ADS (4 yếu tố xếp hạng) -->
+      <section class="card" id="shopping-ads" data-accent="red">
+        <div class="card-header">
+          <h2>SHOPPING ADS (4 yếu tố xếp hạng)</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#shopping-ads-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#shopping-ads-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="shopping-ads-content" hidden>
+          <ol>
+            <li>
+              <strong>Product Feed Optimization</strong>
+              <ul>
+                <li>
+                  Công thức TIÊU ĐỀ (≤150 ký tự, ưu tiên ≤70 ký tự đầu)
+                  <ul>
+                    <li>(1–40) Giới tính + Loại SP + Lợi ích chính</li>
+                    <li>(41–80) Từ khóa phụ/thuộc tính tìm kiếm phổ biến</li>
+                    <li>(81–120) Thương hiệu + mô tả ngắn/USP</li>
+                    <li>(121–150) Long-tail (để Google match, có thể bị cắt)</li>
+                  </ul>
+                </li>
+                <li>Thuộc tính BẮT BUỘC: gender | age_group | product_type</li>
+                <li>Thuộc tính NÊN CÓ: color | material | size | GTIN/MPN | brand</li>
+                <li>Custom Labels (5 nhãn): hiệu suất | biên lợi nhuận | mùa vụ | cạnh tranh | ra mắt</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Merchant Center Performance</strong>
+              <ul>
+                <li>Shipping: nhanh/ổn định, estimate “dư giả” (under-promise, over-deliver)</li>
+                <li>Returns: 30–60 ngày, quy trình dễ, miễn phí nếu cho phép</li>
+                <li>Browsing: điểm trải nghiệm duyệt ≥90 (tốc độ, điều hướng rõ)</li>
+                <li>Purchase: hoàn tất thanh toán ≥95%, bảo mật, mobile-optimized</li>
+                <li>Reviews: bật Google Customer Reviews + sao hiển thị trong Shopping</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Bidding Strategy</strong>
+              <ul>
+                <li>0–14 ngày: thu thập dữ liệu ở mức bid vừa phải</li>
+                <li>Dùng Auction Insights: Impression Share | Overlap | Position Above</li>
+                <li>
+                  Phân tầng bằng custom labels:
+                  <ul>
+                    <li>Aggressive: top lợi nhuận/ROAS cao</li>
+                    <li>Moderate: hiệu suất trung bình</li>
+                    <li>Conservative: yếu/đốt ngân sách</li>
+                  </ul>
+                </li>
+                <li>Điều chỉnh: thiết bị | khung giờ vàng | vị trí địa lý | giá trị đơn hàng</li>
+              </ul>
+            </li>
+            <li>
+              <strong>UX sau click</strong>
+              <ul>
+                <li>Ảnh sản phẩm khớp quảng cáo, nền sạch, đủ góc</li>
+                <li>Giá hiển thị = giá trong feed (nhất quán)</li>
+                <li>Tốc độ tải &lt; 2.5s | Core Web Vitals ổn</li>
+                <li>Trang sản phẩm cùng nội dung/thuộc tính như tiêu đề feed</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="card-sources" id="shopping-ads-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener">Product data specification (GMC)</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324405" target="_blank" rel="noopener">Optimize your product data</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324461" target="_blank" rel="noopener">Use custom labels for Shopping</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/2579754" target="_blank" rel="noopener">Auction insights report</a></li>
+            <li><a href="https://support.google.com/merchants/answer/10028542" target="_blank" rel="noopener">Shopping experience scorecard</a></li>
+            <li><a href="https://support.google.com/merchants/answer/7106244" target="_blank" rel="noopener">Product ratings and reviews</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- THIẾT LẬP CHIẾN DỊCH SHOPPING -->
+      <section class="card" id="thiet-lap" data-accent="blue">
+        <div class="card-header">
+          <h2>THIẾT LẬP CHIẾN DỊCH SHOPPING</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#thiet-lap-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#thiet-lap-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="thiet-lap-content" hidden>
+          <ul>
+            <li>No guided goals (tạo campaign thủ công)</li>
+            <li>Conversion goal: Purchase</li>
+            <li>Manual CPC / Maximize Clicks → Target ROAS (sau ≥30 conversions)</li>
+            <li>Budget = CPC ước tính × 10</li>
+            <li>Priority: High (campaign mới)</li>
+            <li>Location: “In or regularly in”</li>
+            <li>Tắt Search Partners lúc mới chạy</li>
+            <li>Device: loại trừ Tablets sau launch</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="thiet-lap-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/google-ads/answer/3455481" target="_blank" rel="noopener">Create a Shopping campaign</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/2979071" target="_blank" rel="noopener">Bidding strategies for Shopping</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/6167122" target="_blank" rel="noopener">Ad Rank and Quality</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ADVANCED SEGMENTATION -->
+      <section class="card" id="segmentation" data-accent="green">
+        <div class="card-header">
+          <h2>ADVANCED SEGMENTATION</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#segmentation-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#segmentation-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="segmentation-content" hidden>
+          <ul>
+            <li>Theo danh mục SP</li>
+            <li>Theo lợi nhuận</li>
+            <li>Theo hiệu suất</li>
+            <li>Top Performer Campaign (Top 20% SP theo doanh thu)</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="segmentation-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/merchants/answer/6324461" target="_blank" rel="noopener">Custom labels (segmentation)</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/6296411" target="_blank" rel="noopener">Use campaign priority</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MONITORING & OPTIMIZATION -->
+      <section class="card" id="monitoring" data-accent="yellow">
+        <div class="card-header">
+          <h2>MONITORING &amp; OPTIMIZATION</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#monitoring-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#monitoring-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="monitoring-content" hidden>
+          <ul>
+            <li>
+              Tuần 1–2: Check impressions / clicks / conversions
+              <ul>
+                <li>Không impressions → tăng bid 20–50%</li>
+                <li>Có impressions, CTR thấp → tối ưu tiêu đề + thêm promotions</li>
+                <li>Có clicks, CV thấp → tối ưu LP &amp; giá</li>
+              </ul>
+            </li>
+            <li>
+              Tuần 3–4: Phân tích Search Terms
+              <ul>
+                <li>Giữ từ khóa lợi nhuận cao (ROAS &gt;4x)</li>
+                <li>Loại từ khóa không liên quan (Negative Keywords)</li>
+                <li>Đưa từ khóa tiềm năng vào PMAX/Search Ads</li>
+              </ul>
+            </li>
+            <li>
+              Tháng 2+:
+              <ul>
+                <li>Tăng bid/ ngân sách cho SP trên mục tiêu</li>
+                <li>Giảm hoặc pause SP dưới mục tiêu</li>
+                <li>Thêm SP mới vào test</li>
+                <li>Điều chỉnh theo mùa vụ / xu hướng</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="card-sources" id="monitoring-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/google-ads/answer/2472708" target="_blank" rel="noopener">Search terms report</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/2579754" target="_blank" rel="noopener">Auction insights</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/7420901" target="_blank" rel="noopener">Add negative keywords</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ĐO LƯỜNG & KIỂM SOÁT -->
+      <section class="card" id="do-luong" data-accent="red">
+        <div class="card-header">
+          <h2>ĐO LƯỜNG &amp; KIỂM SOÁT</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#do-luong-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#do-luong-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="do-luong-content" hidden>
+          <ul>
+            <li>Search: Thêm cột Top abs. impr. share | Top impr. share | Search impr. share</li>
+            <li>Shopping: KPI → Impression share↑ | Click share↑ | ROAS↑ | Price &amp; image consistency</li>
+            <li>Báo cáo Auction Insights: đối thủ, overlap, vị trí trên</li>
+            <li>KPI Search: CTR↑ | QS≥8/10 | CPC↓ | Conv.rate↑ | Bounce↓</li>
+            <li>Công cụ hỗ trợ: Looker Studio/Sheets (SyncWith) | Ads Transparency Center | SEMrush/Ahrefs</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="do-luong-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/google-ads/answer/6275354" target="_blank" rel="noopener">Search absolute top impression share</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/6292685" target="_blank" rel="noopener">Click share (Shopping)</a></li>
+            <li><a href="https://lookerstudio.google.com/" target="_blank" rel="noopener">Looker Studio</a></li>
+            <li><a href="https://adstransparency.google/" target="_blank" rel="noopener">Ads Transparency Center</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TUÂN THỦ CHÍNH SÁCH -->
+      <section class="card" id="policies" data-accent="red">
+        <div class="card-header">
+          <h2>TUÂN THỦ CHÍNH SÁCH</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#policies-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#policies-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="policies-content" hidden>
+          <ul>
+            <li>Minh bạch doanh nghiệp: thông tin liên hệ, hoàn tiền/đổi trả, điều khoản và quyền riêng tư hiển thị rõ.</li>
+            <li>Tránh sai lệch/misrepresentation: giá, tình trạng còn hàng và thuộc tính phải khớp giữa trang và feed.</li>
+            <li>Yêu cầu biên tập (Editorial): viết chuẩn, không lạm dụng viết HOA/!!!, không nhồi nhét từ khóa.</li>
+            <li>Shopping hình ảnh: không watermark/border/overlay khuyến mãi; ảnh 1024px+, nền sạch.</li>
+            <li>GTIN/MPN & biến thể: cung cấp GTIN hợp lệ; thuộc tính size/color/material đúng biến thể.</li>
+            <li>Thương hiệu & nhãn hiệu: không dùng brand đối thủ nếu không được phép; brand trong feed phải chính xác.</li>
+            <li>Nội dung nhạy cảm/giới hạn: sức khỏe/giảm cân/thuốc/bổ sung – tuân chính sách từng quốc gia.</li>
+            <li>Khuyến mãi: dùng Merchant Promotions; voucher/code và giá sau giảm phải nhất quán.</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="policies-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/adspolicy/answer/6008942" target="_blank" rel="noopener">Google Ads Policies overview</a></li>
+            <li><a href="https://support.google.com/adspolicy/answer/6020955" target="_blank" rel="noopener">Misrepresentation policy</a></li>
+            <li><a href="https://support.google.com/adspolicy/answer/6021546" target="_blank" rel="noopener">Editorial & technical requirements</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6149970" target="_blank" rel="noopener">Shopping ads policies</a></li>
+            <li><a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener">Product data specification (GMC)</a></li>
+            <li><a href="https://support.google.com/merchants/answer/13479452" target="_blank" rel="noopener">Price & availability policy</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324468" target="_blank" rel="noopener">GTIN requirements</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener">Image requirements</a></li>
+            <li><a href="https://support.google.com/merchants/answer/4588460" target="_blank" rel="noopener">Merchant Promotions policy</a></li>
+            <li><a href="https://support.google.com/adspolicy/answer/176031" target="_blank" rel="noopener">Trademarks</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- QUYỀN RIÊNG TƯ & ĐO LƯỜNG NÂNG CAO -->
+      <section class="card" id="privacy-measurement" data-accent="blue">
+        <div class="card-header">
+          <h2>QUYỀN RIÊNG TƯ &amp; ĐO LƯỜNG NÂNG CAO</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#privacy-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#privacy-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="privacy-content" hidden>
+          <ul>
+            <li>Consent Mode v2 + CMP: bắt tín hiệu đồng ý (EEA) để đo lường và phân phối hợp lệ.</li>
+            <li>Enhanced Conversions (Web): gửi dữ liệu băm an toàn để cải thiện gán chuyển đổi.</li>
+            <li>GA4 liên kết Google Ads: nhập mục tiêu giá trị, audience và remarketing đúng luật.</li>
+            <li>Offline Conversion Import (OCI): gắn GCLID/GBRAID/WBRAID để khép kín doanh thu.</li>
+            <li>Seasonality adjustments & Data exclusions: xử lý dịp sale hoặc lỗi thẻ/triển khai.</li>
+            <li>Giá trị giao dịch: truyền value/item-level để tối ưu theo ROAS chính xác.</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="privacy-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/google-ads/answer/10000067" target="_blank" rel="noopener">Consent Mode</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/9976101" target="_blank" rel="noopener">Enhanced conversions</a></li>
+            <li><a href="https://support.google.com/analytics/answer/1033961" target="_blank" rel="noopener">Link Google Ads and GA4</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/2998031" target="_blank" rel="noopener">Import offline conversions</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/10069510" target="_blank" rel="noopener">Seasonality adjustments</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/11077272" target="_blank" rel="noopener">Data exclusions</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ASSET & CREATIVE BEST PRACTICES -->
+      <section class="card" id="assets-best-practices" data-accent="green">
+        <div class="card-header">
+          <h2>ASSET &amp; CREATIVE BEST PRACTICES</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#assets-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#assets-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="assets-content" hidden>
+          <ul>
+            <li>Performance Max: audience signals, brand exclusions, final URL expansion kiểm soát theo mục tiêu.</li>
+            <li>RSA: hạn chế pinning; 2–3 headline chứa từ khóa; dùng sitelinks, callouts, structured snippets.</li>
+            <li>Shopping images: 1024px+, nền trung tính; thêm ảnh lifestyle &amp; nhiều góc; không overlay.</li>
+            <li>Video &amp; hình: đảm bảo tỷ lệ 1:1, 4:5, 16:9; tiêu đề/USP rõ trong 3 giây đầu.</li>
+            <li>Product Ratings: kích hoạt sao đánh giá; đồng bộ nguồn đánh giá phù hợp.</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="assets-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/google-ads/answer/10724816" target="_blank" rel="noopener">Performance Max best practices</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/9261253" target="_blank" rel="noopener">RSA best practices</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener">Image requirements (GMC)</a></li>
+            <li><a href="https://support.google.com/merchants/answer/7106244" target="_blank" rel="noopener">Product ratings program</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SOCIAL PROOF & UGC -->
+      <section class="card" id="social-proof" data-accent="yellow">
+        <div class="card-header">
+          <h2>SOCIAL PROOF &amp; UGC</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#social-proof-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#social-proof-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="social-proof-content" hidden>
+          <ul>
+            <li>Hiển thị đánh giá/sao hợp lệ: Google Customer Reviews hoặc nguồn tích hợp GMC.</li>
+            <li>UGC: xin phép, minh bạch tài trợ; dùng testimonial ngắn, nêu kết quả cụ thể (không phóng đại).</li>
+            <li>Schema dữ liệu có cấu trúc (Product, AggregateRating) để tăng độ tin cậy trên web.</li>
+            <li>Dùng social hooks: “trước–sau”, unboxing, FAQ ngắn; kêu gọi hành động rõ.</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="social-proof-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/merchants/answer/7106244" target="_blank" rel="noopener">Product ratings (Merchant Center)</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6191341" target="_blank" rel="noopener">Google Customer Reviews</a></li>
+            <li><a href="https://schema.org/Product" target="_blank" rel="noopener">Schema.org Product</a></li>
+            <li><a href="https://schema.org/AggregateRating" target="_blank" rel="noopener">Schema.org AggregateRating</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FEED HEALTH & DIAGNOSTICS -->
+      <section class="card" id="feed-health" data-accent="blue">
+        <div class="card-header">
+          <h2>FEED HEALTH &amp; DIAGNOSTICS</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#feed-health-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#feed-health-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="feed-health-content" hidden>
+          <ul>
+            <li>Diagnostics: theo dõi item disapproved, warnings, và tỷ lệ “eligible to serve”.</li>
+            <li>Item-level quality: điền <code>item_group_id</code> cho biến thể; thuộc tính bắt buộc theo danh mục (Apparel vs. Others).</li>
+            <li>Automatic improvements: bật cập nhật giá &amp; tình trạng tự động nếu hạ tầng site ổn định.</li>
+            <li>Structured data: đồng bộ schema (Product, Offer) để Google crawl so khớp với feed.</li>
+            <li>Shipping &amp; Tax: cấu hình chính xác theo khu vực; delivery times thực tế, cut-off rõ.</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="feed-health-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/merchants/answer/160491" target="_blank" rel="noopener">Diagnostics in Merchant Center</a></li>
+            <li><a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener">Product data specification</a></li>
+            <li><a href="https://support.google.com/merchants/answer/3246284" target="_blank" rel="noopener">Automatic improvements</a></li>
+            <li><a href="https://developers.google.com/search/docs/appearance/structured-data/product" target="_blank" rel="noopener">Product structured data</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6069284" target="_blank" rel="noopener">Shipping settings</a></li>
+            <li><a href="https://support.google.com/merchants/answer/160162" target="_blank" rel="noopener">Tax settings (US)</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PRICE COMPETITIVENESS & PROMOS -->
+      <section class="card" id="price-competitiveness" data-accent="green">
+        <div class="card-header">
+          <h2>PRICE COMPETITIVENESS &amp; PROMOS</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#price-competitiveness-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#price-competitiveness-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="price-competitiveness-content" hidden>
+          <ul>
+            <li>Price Competitiveness report: tìm SP giá cao hơn thị trường → điều chỉnh hoặc thêm giá trị kèm theo.</li>
+            <li>Price Insights &amp; Benchmark: theo dõi Click share &amp; Impression share bị ảnh hưởng bởi giá.</li>
+            <li>Merchant Promotions: thiết lập giảm giá rõ (percent/amount), giá sau giảm khớp trang đích.</li>
+            <li>Free shipping thresholds: nêu ngưỡng hợp lý; tối ưu conversion và biên lợi nhuận.</li>
+            <li>Bundle/Value-add: quà tặng/extended warranty thay vì giảm giá thuần để giữ ROAS.</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="price-competitiveness-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/merchants/answer/7676579" target="_blank" rel="noopener">Price competitiveness report</a></li>
+            <li><a href="https://support.google.com/merchants/answer/4588460" target="_blank" rel="noopener">Merchant Promotions</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/6292685" target="_blank" rel="noopener">Click share (Shopping)</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- NGHIÊN CỨU XU HƯỚNG & TÍN HIỆU XÃ HỘI -->
+      <section class="card" id="social-signals-trends" data-accent="yellow">
+        <div class="card-header">
+          <h2>NGHIÊN CỨU XU HƯỚNG &amp; TÍN HIỆU XÃ HỘI</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#social-signals-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#social-signals-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="social-signals-content" hidden>
+          <ul>
+            <li>Google Trends &amp; Rising Retail: chọn danh mục tăng trưởng để test PMAX/Shopping.</li>
+            <li>TikTok Creative Center &amp; YouTube Trending: khai thác hook/định dạng bắt trend cho asset.</li>
+            <li>Pinterest Trends &amp; Instagram Insights: phát hiện nhu cầu theo mùa &amp; thẩm mỹ.</li>
+            <li>Social listening: thu thập FAQ, objections để viết RSA/LP/FAQ bám intent.</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="social-signals-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://trends.google.com/" target="_blank" rel="noopener">Google Trends</a></li>
+            <li><a href="https://www.thinkwithgoogle.com/intl/en-apac/insights-trends/data-and-measurement/rising-retail-categories/" target="_blank" rel="noopener">Rising Retail Categories</a></li>
+            <li><a href="https://www.tiktok.com/business/creativecenter/" target="_blank" rel="noopener">TikTok Creative Center</a></li>
+            <li><a href="https://www.youtube.com/feed/trending" target="_blank" rel="noopener">YouTube Trending</a></li>
+            <li><a href="https://trends.pinterest.com/" target="_blank" rel="noopener">Pinterest Trends</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- LỘ TRÌNH 14 NGÀY TRIỂN KHAI -->
+      <section class="card" id="lo-trinh" data-accent="red">
+        <div class="card-header">
+          <h2>LỘ TRÌNH 14 NGÀY TRIỂN KHAI</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#lo-trinh-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#lo-trinh-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="lo-trinh-content" hidden>
+          <ul>
+            <li>D0–D2: Audit nhanh (search terms, auction insights, feed thuộc tính, GMC score)</li>
+            <li>D3–D5: Viết lại tiêu đề feed theo công thức; bổ sung gender/age/product_type/GTIN</li>
+            <li>D6–D7: Tạo/siết ad groups (SKAG hoặc nhóm chặt); viết RSA bám keyword</li>
+            <li>D8–D9: Tạo landing page biến thể cho từ khóa trọng điểm (3 giây đầu = “đúng chỗ”)</li>
+            <li>D10–D11: Cấu hình custom labels; chia ngân sách theo lợi nhuận/hiệu suất/mùa vụ</li>
+            <li>D12: Kiểm tra Merchant Center (shipping/returns/browsing/purchase/reviews)</li>
+            <li>D13: Thiết lập theo dõi &amp; dashboard (SyncWith → Sheets → Looker Studio)</li>
+            <li>D14: Điều chỉnh bid theo tầng + thiết bị/giờ/địa lý dựa trên dữ liệu 2 tuần</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="lo-trinh-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/google-ads/answer/2979071" target="_blank" rel="noopener">Smart Bidding and learning periods</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/7285653" target="_blank" rel="noopener">Best practices for Shopping</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 | Google Shopping Ads – Dark Thinker • Thiết kế để giảng dạy và thực chiến.</p>
+    </footer>
+
+    <script src="assets/app.js"></script>
+  </body>
+  </html>
+
+
