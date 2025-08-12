@@ -36,7 +36,7 @@ def main() -> None:
     st.markdown(
         """
         <style>
-        .block-container {max-width: 100%; padding-top: 0.5rem; padding-bottom: 2rem;}
+        .block-container {max-width: 100%; padding-top: 1.25rem; padding-bottom: 2rem;}
         section.main > div {padding-left: 0 !important; padding-right: 0 !important;}
         /* Add a small top spacer to avoid the app being cropped at the top */
         .stApp { padding-top: 6px; }
@@ -78,7 +78,7 @@ def main() -> None:
               height: 100vh !important;
               border: 0 !important;
             }
-            html, body, .stApp { overflow: hidden; }
+            html, body, .stApp { overflow: hidden; padding-top: env(safe-area-inset-top, 0px); }
             </style>
             """,
             unsafe_allow_html=True,

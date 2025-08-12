@@ -29,12 +29,12 @@ body {
               radial-gradient(1000px 600px at 120% 10%, rgba(125,211,252,.08), transparent 60%),
               var(--bg);
   color: var(--text);
-  padding-top: 12px; /* avoid being visually clipped at the very top in some hosts */
+  padding-top: calc(env(safe-area-inset-top, 0px) + 24px); /* ensure visible gap at top */
 }
 
 .site-header {
   position: sticky;
-  top: 8px; /* keep a visual gap from the very top */
+  top: calc(env(safe-area-inset-top, 0px) + 12px); /* safe-gap for host toolbars */
   z-index: 10;
   display: flex;
   justify-content: space-between;
