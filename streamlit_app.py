@@ -32,6 +32,16 @@ def inline_assets(index_html: str, css_text: str, js_text: str) -> str:
 
 def main() -> None:
     st.set_page_config(page_title="Google Shopping Ads – Dark Thinker", layout="wide")
+    # Tighten Streamlit container paddings for better iframe fit
+    st.markdown(
+        """
+        <style>
+        .block-container {max-width: 100%; padding-top: 0.5rem; padding-bottom: 2rem;}
+        section.main > div {padding-left: 0 !important; padding-right: 0 !important;}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
     base_dir = Path(__file__).parent
     index_html = load_text(base_dir / "index.html")
@@ -47,10 +57,11 @@ def main() -> None:
     with st.sidebar:
         st.markdown("**Xem giao diện**")
         height = st.slider("Chiều cao khung nhúng (px)", min_value=800, max_value=3000, value=1600, step=100)
-        st.caption("Dùng thanh cuộn trong khung để xem đầy đủ nội dung.")
+        width = st.slider("Chiều rộng khung nhúng (px)", min_value=360, max_value=1600, value=1200, step=40)
+        st.caption("Tip: PC ~1200px, Mobile ~380–420px. Dùng thanh cuộn trong khung để xem đầy đủ nội dung.")
 
     # Render full HTML (including <html> .. </html>) inside component iframe
-    st_html(html_inlined, height=height, scrolling=True)
+    st_html(html_inlined, height=height, width=width, scrolling=True)
 
 
 if __name__ == "__main__":
