@@ -31,6 +31,7 @@ def inline_assets(index_html: str, css_text: str, js_text: str) -> str:
 
 
 def main() -> None:
+    # Main function for Google Shopping Ads curriculum interface
     st.set_page_config(page_title="Google Shopping Ads – Dark Thinker", layout="wide")
     # Tighten Streamlit container paddings for better iframe fit
     st.markdown(
