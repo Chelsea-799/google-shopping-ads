@@ -121,6 +121,67 @@
         </div>
       </section>
 
+      <!-- TẠO VÀ QUẢN LÝ PRODUCT FEED -->
+      <section class="card" id="product-feed" data-accent="green">
+        <div class="card-header">
+          <h2>TẠO VÀ QUẢN LÝ PRODUCT FEED</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#product-feed-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#product-feed-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="product-feed-content" hidden>
+          <ol>
+            <li>
+              <strong>Tuân thủ Product Data Specification</strong>
+              <ul>
+                <li>
+                  Trường bắt buộc:
+                  <ul>
+                    <li>id</li>
+                    <li>title (≤150 ký tự)</li>
+                    <li>description</li>
+                    <li>link</li>
+                    <li>image_link (nền trắng, không watermark)</li>
+                    <li>availability (in stock/out of stock/preorder)</li>
+                    <li>price (định dạng chuẩn + tiền tệ)</li>
+                    <li>brand</li>
+                    <li>gtin hoặc mpn (nếu có)</li>
+                    <li>google_product_category (ID hoặc tên đầy đủ)</li>
+                    <li>condition (new/used/refurbished)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Phương thức tạo feed</strong>
+              <ul>
+                <li>Google Sheets</li>
+                <li>File XML / CSV</li>
+                <li>API từ WooCommerce / Shopify</li>
+                <li>Qua bên thứ 3 (DataFeedWatch, Channable…)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lên lịch cập nhật dữ liệu</strong>
+              <ul>
+                <li>Daily</li>
+                <li>Hourly (nếu biến động giá/tồn kho nhanh)</li>
+                <li>Manual upload</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="card-sources" id="product-feed-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener">Product data specification</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324468" target="_blank" rel="noopener">GTIN requirements</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener">Image requirements</a></li>
+            <li><a href="https://support.google.com/merchants/answer/3246284" target="_blank" rel="noopener">Automatic improvements</a></li>
+          </ul>
+        </div>
+      </section>
+
       <!-- MỤC TIÊU -->
       <section class="card" id="muc-tieu" data-accent="blue">
         <div class="card-header">
