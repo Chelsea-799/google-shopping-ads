@@ -59,9 +59,7 @@ def main() -> None:
     with st.sidebar:
         st.markdown("**Xem giao diện**")
         fullscreen = st.checkbox("Chế độ toàn màn hình (full width • full height)", value=False)
-        height = st.slider("Chiều cao khung nhúng (px)", min_value=800, max_value=3000, value=1600, step=100, disabled=fullscreen)
-        width = st.slider("Chiều rộng khung nhúng (px)", min_value=360, max_value=1600, value=1200, step=40, disabled=fullscreen)
-        st.caption("Tip: PC ~1200px, Mobile ~380–420px. Bật 'toàn màn hình' để chiếm toàn bộ khung trình duyệt.")
+        st.caption("Tip: Bật 'toàn màn hình' để chiếm toàn bộ khung trình duyệt.")
 
     if fullscreen:
         st.markdown(
@@ -86,7 +84,7 @@ def main() -> None:
 
     # Render full HTML (including <html> .. </html>) inside component iframe
     # Width/height will be overridden by CSS in fullscreen mode
-    st_html(html_inlined, height=(height if not fullscreen else 1000), width=(width if not fullscreen else 1000), scrolling=True)
+    st_html(html_inlined, height=(1000 if not fullscreen else 1000), width=(1000 if not fullscreen else 1000), scrolling=True)
 
 
 if __name__ == "__main__":
