@@ -26,6 +26,101 @@
     </header>
 
     <main class="container">
+      <!-- CHUẨN BỊ ĐIỀU KIỆN CƠ BẢN -->
+      <section class="card" id="dieu-kien-co-ban" data-accent="blue">
+        <div class="card-header">
+          <h2>CHUẨN BỊ ĐIỀU KIỆN CƠ BẢN</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#dieu-kien-co-ban-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#dieu-kien-co-ban-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="dieu-kien-co-ban-content" hidden>
+          <ol>
+            <li>
+              <strong>Website TMĐT đạt chuẩn</strong>
+              <ul>
+                <li>Bắt buộc HTTPS (SSL)</li>
+                <li>Mua hàng trực tuyến (checkout online)</li>
+                <li>Responsive (desktop + mobile)</li>
+                <li>Tốc độ tải trang tốt</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Nội dung &amp; Chính sách minh bạch</strong>
+              <ul>
+                <li>Trang "Chính sách đổi trả"</li>
+                <li>Trang "Chính sách vận chuyển"</li>
+                <li>Điều khoản dịch vụ (TOS)</li>
+                <li>Chính sách bảo mật (Privacy Policy)</li>
+                <li>Thông tin liên hệ (email, số ĐT, địa chỉ thật)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Sản phẩm tuân thủ chính sách Google</strong>
+              <ul>
+                <li>Không bán hàng giả, nhái</li>
+                <li>Không hàng cấm (vũ khí, thuốc, nội dung người lớn…)</li>
+                <li>Hình ảnh và mô tả phản ánh đúng thực tế</li>
+                <li>Giá, phí rõ ràng</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Hệ thống thanh toán</strong>
+              <ul>
+                <li>COD (nếu áp dụng)</li>
+                <li>Thanh toán online (Visa/Mastercard, PayPal, …)</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="card-sources" id="dieu-kien-co-ban-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/merchants/answer/6149970" target="_blank" rel="noopener">Shopping ads policies overview</a></li>
+            <li><a href="https://support.google.com/merchants/answer/13479452" target="_blank" rel="noopener">Price &amp; availability policy</a></li>
+            <li><a href="https://support.google.com/merchants/answer/160008" target="_blank" rel="noopener">Website requirements</a></li>
+            <li><a href="https://web.dev/vitals/" target="_blank" rel="noopener">Core Web Vitals (web.dev)</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TUÂN THỦ CHÍNH SÁCH -->
+      <section class="card" id="policies" data-accent="red">
+        <div class="card-header">
+          <h2>TUÂN THỦ CHÍNH SÁCH</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#policies-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#policies-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="policies-content" hidden>
+          <ul>
+            <li>Minh bạch doanh nghiệp: thông tin liên hệ, hoàn tiền/đổi trả, điều khoản và quyền riêng tư hiển thị rõ.</li>
+            <li>Tránh sai lệch/misrepresentation: giá, tình trạng còn hàng và thuộc tính phải khớp giữa trang và feed.</li>
+            <li>Yêu cầu biên tập (Editorial): viết chuẩn, không lạm dụng viết HOA/!!!, không nhồi nhét từ khóa.</li>
+            <li>Shopping hình ảnh: không watermark/border/overlay khuyến mãi; ảnh 1024px+, nền sạch.</li>
+            <li>GTIN/MPN & biến thể: cung cấp GTIN hợp lệ; thuộc tính size/color/material đúng biến thể.</li>
+            <li>Thương hiệu & nhãn hiệu: không dùng brand đối thủ nếu không được phép; brand trong feed phải chính xác.</li>
+            <li>Nội dung nhạy cảm/giới hạn: sức khỏe/giảm cân/thuốc/bổ sung – tuân chính sách từng quốc gia.</li>
+            <li>Khuyến mãi: dùng Merchant Promotions; voucher/code và giá sau giảm phải nhất quán.</li>
+          </ul>
+        </div>
+        <div class="card-sources" id="policies-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/adspolicy/answer/6008942" target="_blank" rel="noopener">Google Ads Policies overview</a></li>
+            <li><a href="https://support.google.com/adspolicy/answer/6020955" target="_blank" rel="noopener">Misrepresentation policy</a></li>
+            <li><a href="https://support.google.com/adspolicy/answer/6021546" target="_blank" rel="noopener">Editorial & technical requirements</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6149970" target="_blank" rel="noopener">Shopping ads policies</a></li>
+            <li><a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener">Product data specification (GMC)</a></li>
+            <li><a href="https://support.google.com/merchants/answer/13479452" target="_blank" rel="noopener">Price & availability policy</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324468" target="_blank" rel="noopener">GTIN requirements</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener">Image requirements</a></li>
+            <li><a href="https://support.google.com/merchants/answer/4588460" target="_blank" rel="noopener">Merchant Promotions policy</a></li>
+            <li><a href="https://support.google.com/adspolicy/answer/176031" target="_blank" rel="noopener">Trademarks</a></li>
+          </ul>
+        </div>
+      </section>
+
       <!-- MỤC TIÊU -->
       <section class="card" id="muc-tieu" data-accent="blue">
         <div class="card-header">
@@ -328,43 +423,6 @@
         </div>
       </section>
 
-      <!-- TUÂN THỦ CHÍNH SÁCH -->
-      <section class="card" id="policies" data-accent="red">
-        <div class="card-header">
-          <h2>TUÂN THỦ CHÍNH SÁCH</h2>
-          <div class="actions">
-            <button class="btn toggle" data-target="#policies-content">Mở rộng</button>
-            <button class="btn secondary toggle" data-target="#policies-sources">Nguồn</button>
-          </div>
-        </div>
-        <div class="card-body" id="policies-content" hidden>
-          <ul>
-            <li>Minh bạch doanh nghiệp: thông tin liên hệ, hoàn tiền/đổi trả, điều khoản và quyền riêng tư hiển thị rõ.</li>
-            <li>Tránh sai lệch/misrepresentation: giá, tình trạng còn hàng và thuộc tính phải khớp giữa trang và feed.</li>
-            <li>Yêu cầu biên tập (Editorial): viết chuẩn, không lạm dụng viết HOA/!!!, không nhồi nhét từ khóa.</li>
-            <li>Shopping hình ảnh: không watermark/border/overlay khuyến mãi; ảnh 1024px+, nền sạch.</li>
-            <li>GTIN/MPN & biến thể: cung cấp GTIN hợp lệ; thuộc tính size/color/material đúng biến thể.</li>
-            <li>Thương hiệu & nhãn hiệu: không dùng brand đối thủ nếu không được phép; brand trong feed phải chính xác.</li>
-            <li>Nội dung nhạy cảm/giới hạn: sức khỏe/giảm cân/thuốc/bổ sung – tuân chính sách từng quốc gia.</li>
-            <li>Khuyến mãi: dùng Merchant Promotions; voucher/code và giá sau giảm phải nhất quán.</li>
-          </ul>
-        </div>
-        <div class="card-sources" id="policies-sources" hidden>
-          <ul class="sources">
-            <li><a href="https://support.google.com/adspolicy/answer/6008942" target="_blank" rel="noopener">Google Ads Policies overview</a></li>
-            <li><a href="https://support.google.com/adspolicy/answer/6020955" target="_blank" rel="noopener">Misrepresentation policy</a></li>
-            <li><a href="https://support.google.com/adspolicy/answer/6021546" target="_blank" rel="noopener">Editorial & technical requirements</a></li>
-            <li><a href="https://support.google.com/merchants/answer/6149970" target="_blank" rel="noopener">Shopping ads policies</a></li>
-            <li><a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener">Product data specification (GMC)</a></li>
-            <li><a href="https://support.google.com/merchants/answer/13479452" target="_blank" rel="noopener">Price & availability policy</a></li>
-            <li><a href="https://support.google.com/merchants/answer/6324468" target="_blank" rel="noopener">GTIN requirements</a></li>
-            <li><a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener">Image requirements</a></li>
-            <li><a href="https://support.google.com/merchants/answer/4588460" target="_blank" rel="noopener">Merchant Promotions policy</a></li>
-            <li><a href="https://support.google.com/adspolicy/answer/176031" target="_blank" rel="noopener">Trademarks</a></li>
-          </ul>
-        </div>
-      </section>
-
       <!-- QUYỀN RIÊNG TƯ & ĐO LƯỜNG NÂNG CAO -->
       <section class="card" id="privacy-measurement" data-accent="blue">
         <div class="card-header">
@@ -532,195 +590,6 @@
             <li><a href="https://www.tiktok.com/business/creativecenter/" target="_blank" rel="noopener">TikTok Creative Center</a></li>
             <li><a href="https://www.youtube.com/feed/trending" target="_blank" rel="noopener">YouTube Trending</a></li>
             <li><a href="https://trends.pinterest.com/" target="_blank" rel="noopener">Pinterest Trends</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- CHUẨN BỊ ĐIỀU KIỆN CƠ BẢN -->
-      <section class="card" id="dieu-kien-co-ban" data-accent="blue">
-        <div class="card-header">
-          <h2>CHUẨN BỊ ĐIỀU KIỆN CƠ BẢN</h2>
-          <div class="actions">
-            <button class="btn toggle" data-target="#dieu-kien-co-ban-content">Mở rộng</button>
-            <button class="btn secondary toggle" data-target="#dieu-kien-co-ban-sources">Nguồn</button>
-          </div>
-        </div>
-        <div class="card-body" id="dieu-kien-co-ban-content" hidden>
-          <ol>
-            <li>
-              <strong>Website TMĐT đạt chuẩn</strong>
-              <ul>
-                <li>Bắt buộc HTTPS (SSL)</li>
-                <li>Mua hàng trực tuyến (checkout online)</li>
-                <li>Responsive (desktop + mobile)</li>
-                <li>Tốc độ tải trang tốt</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Nội dung &amp; Chính sách minh bạch</strong>
-              <ul>
-                <li>Trang "Chính sách đổi trả"</li>
-                <li>Trang "Chính sách vận chuyển"</li>
-                <li>Điều khoản dịch vụ (TOS)</li>
-                <li>Chính sách bảo mật (Privacy Policy)</li>
-                <li>Thông tin liên hệ (email, số ĐT, địa chỉ thật)</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Sản phẩm tuân thủ chính sách Google</strong>
-              <ul>
-                <li>Không bán hàng giả, nhái</li>
-                <li>Không hàng cấm (vũ khí, thuốc, nội dung người lớn…)</li>
-                <li>Hình ảnh và mô tả phản ánh đúng thực tế</li>
-                <li>Giá, phí rõ ràng</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Hệ thống thanh toán</strong>
-              <ul>
-                <li>COD (nếu áp dụng)</li>
-                <li>Thanh toán online (Visa/Mastercard, PayPal, …)</li>
-              </ul>
-            </li>
-          </ol>
-        </div>
-        <div class="card-sources" id="dieu-kien-co-ban-sources" hidden>
-          <ul class="sources">
-            <li><a href="https://support.google.com/merchants/answer/6149970" target="_blank" rel="noopener">Shopping ads policies overview</a></li>
-            <li><a href="https://support.google.com/merchants/answer/13479452" target="_blank" rel="noopener">Price &amp; availability policy</a></li>
-            <li><a href="https://support.google.com/merchants/answer/160008" target="_blank" rel="noopener">Website requirements</a></li>
-            <li><a href="https://web.dev/vitals/" target="_blank" rel="noopener">Core Web Vitals (web.dev)</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- TẠO VÀ QUẢN LÝ PRODUCT FEED -->
-      <section class="card" id="product-feed" data-accent="green">
-        <div class="card-header">
-          <h2>TẠO VÀ QUẢN LÝ PRODUCT FEED</h2>
-          <div class="actions">
-            <button class="btn toggle" data-target="#product-feed-content">Mở rộng</button>
-            <button class="btn secondary toggle" data-target="#product-feed-sources">Nguồn</button>
-          </div>
-        </div>
-        <div class="card-body" id="product-feed-content" hidden>
-          <ol>
-            <li>
-              <strong>Tuân thủ Product Data Specification</strong>
-              <ul>
-                <li>
-                  Trường bắt buộc:
-                  <ul>
-                    <li>id</li>
-                    <li>title (≤150 ký tự)</li>
-                    <li>description</li>
-                    <li>link</li>
-                    <li>image_link (nền trắng, không watermark)</li>
-                    <li>availability (in stock/out of stock/preorder)</li>
-                    <li>price (định dạng chuẩn + tiền tệ)</li>
-                    <li>brand</li>
-                    <li>gtin hoặc mpn (nếu có)</li>
-                    <li>google_product_category (ID hoặc tên đầy đủ)</li>
-                    <li>condition (new/used/refurbished)</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong>Phương thức tạo feed</strong>
-              <ul>
-                <li>Google Sheets</li>
-                <li>File XML / CSV</li>
-                <li>API từ WooCommerce / Shopify</li>
-                <li>Qua bên thứ 3 (DataFeedWatch, Channable…)</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Lên lịch cập nhật dữ liệu</strong>
-              <ul>
-                <li>Daily</li>
-                <li>Hourly (nếu biến động giá/tồn kho nhanh)</li>
-                <li>Manual upload</li>
-              </ul>
-            </li>
-          </ol>
-        </div>
-        <div class="card-sources" id="product-feed-sources" hidden>
-          <ul class="sources">
-            <li><a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener">Product data specification</a></li>
-            <li><a href="https://support.google.com/merchants/answer/6324468" target="_blank" rel="noopener">GTIN requirements</a></li>
-            <li><a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener">Image requirements</a></li>
-            <li><a href="https://support.google.com/merchants/answer/3246284" target="_blank" rel="noopener">Automatic improvements</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- KIỂM DUYỆT SẢN PHẨM TRONG GMC -->
-      <section class="card" id="kiem-duyet-gmc" data-accent="yellow">
-        <div class="card-header">
-          <h2>KIỂM DUYỆT SẢN PHẨM TRONG GMC</h2>
-          <div class="actions">
-            <button class="btn toggle" data-target="#kiem-duyet-gmc-content">Mở rộng</button>
-            <button class="btn secondary toggle" data-target="#kiem-duyet-gmc-sources">Nguồn</button>
-          </div>
-        </div>
-        <div class="card-body" id="kiem-duyet-gmc-content" hidden>
-          <ol>
-            <li>Google review sản phẩm</li>
-            <li>
-              Xử lý lỗi trong mục Diagnostics
-              <ul>
-                <li>Thiếu trường dữ liệu</li>
-                <li>Sai định dạng giá</li>
-                <li>Hình ảnh vi phạm</li>
-                <li>Sai category</li>
-              </ul>
-            </li>
-            <li>Tuân thủ chính sách quảng cáo Google Shopping</li>
-          </ol>
-        </div>
-        <div class="card-sources" id="kiem-duyet-gmc-sources" hidden>
-          <ul class="sources">
-            <li><a href="https://support.google.com/merchants/answer/160491" target="_blank" rel="noopener">Diagnostics in Merchant Center</a></li>
-            <li><a href="https://support.google.com/merchants/answer/6149970" target="_blank" rel="noopener">Shopping ads policies</a></li>
-            <li><a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener">Image requirements</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- CHẠY QUẢNG CÁO GOOGLE SHOPPING -->
-      <section class="card" id="chay-quang-cao" data-accent="red">
-        <div class="card-header">
-          <h2>CHẠY QUẢNG CÁO GOOGLE SHOPPING</h2>
-          <div class="actions">
-            <button class="btn toggle" data-target="#chay-quang-cao-content">Mở rộng</button>
-            <button class="btn secondary toggle" data-target="#chay-quang-cao-sources">Nguồn</button>
-          </div>
-        </div>
-        <div class="card-body" id="chay-quang-cao-content" hidden>
-          <ol>
-            <li>Liên kết GMC với Google Ads</li>
-            <li>
-              Tạo chiến dịch
-              <ul>
-                <li>Shopping Campaign</li>
-              </ul>
-            </li>
-            <li>
-              Cài đặt ngân sách &amp; chiến lược bid
-              <ul>
-                <li>Manual CPC / ECPC</li>
-                <li>tROAS / Maximize Conversions</li>
-              </ul>
-            </li>
-            <li>Gắn conversion tracking (GA4 + Google Ads)</li>
-          </ol>
-        </div>
-        <div class="card-sources" id="chay-quang-cao-sources" hidden>
-          <ul class="sources">
-            <li><a href="https://support.google.com/google-ads/answer/3455481" target="_blank" rel="noopener">Create a Shopping campaign</a></li>
-            <li><a href="https://support.google.com/google-ads/answer/2979071" target="_blank" rel="noopener">Bidding strategies</a></li>
-            <li><a href="https://support.google.com/analytics/answer/1033961" target="_blank" rel="noopener">Link Google Ads and GA4</a></li>
           </ul>
         </div>
       </section>
