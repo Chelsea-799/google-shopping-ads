@@ -508,8 +508,8 @@
         </div>
       </section>
 
-      <!-- NGHIÊN CỨU XU HƯỚNG & TÍN HIỆU XÃ HỘI -->
-      <section class="card" id="social-signals-trends" data-accent="yellow">
+      <!-- SOCIAL SIGNALS & TRENDS -->
+      <section class="card" id="social-signals-trends">
         <div class="card-header">
           <h2>NGHIÊN CỨU XU HƯỚNG &amp; TÍN HIỆU XÃ HỘI</h2>
           <div class="actions">
@@ -532,6 +532,305 @@
             <li><a href="https://www.tiktok.com/business/creativecenter/" target="_blank" rel="noopener">TikTok Creative Center</a></li>
             <li><a href="https://www.youtube.com/feed/trending" target="_blank" rel="noopener">YouTube Trending</a></li>
             <li><a href="https://trends.pinterest.com/" target="_blank" rel="noopener">Pinterest Trends</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CHUẨN BỊ ĐIỀU KIỆN CƠ BẢN -->
+      <section class="card" id="dieu-kien-co-ban" data-accent="blue">
+        <div class="card-header">
+          <h2>CHUẨN BỊ ĐIỀU KIỆN CƠ BẢN</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#dieu-kien-co-ban-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#dieu-kien-co-ban-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="dieu-kien-co-ban-content" hidden>
+          <ol>
+            <li>
+              <strong>Website TMĐT đạt chuẩn</strong>
+              <ul>
+                <li>Bắt buộc HTTPS (SSL)</li>
+                <li>Mua hàng trực tuyến (checkout online)</li>
+                <li>Responsive (desktop + mobile)</li>
+                <li>Tốc độ tải trang tốt</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Nội dung &amp; Chính sách minh bạch</strong>
+              <ul>
+                <li>Trang "Chính sách đổi trả"</li>
+                <li>Trang "Chính sách vận chuyển"</li>
+                <li>Điều khoản dịch vụ (TOS)</li>
+                <li>Chính sách bảo mật (Privacy Policy)</li>
+                <li>Thông tin liên hệ (email, số ĐT, địa chỉ thật)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Sản phẩm tuân thủ chính sách Google</strong>
+              <ul>
+                <li>Không bán hàng giả, nhái</li>
+                <li>Không hàng cấm (vũ khí, thuốc, nội dung người lớn…)</li>
+                <li>Hình ảnh và mô tả phản ánh đúng thực tế</li>
+                <li>Giá, phí rõ ràng</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Hệ thống thanh toán</strong>
+              <ul>
+                <li>COD (nếu áp dụng)</li>
+                <li>Thanh toán online (Visa/Mastercard, PayPal, …)</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="card-sources" id="dieu-kien-co-ban-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/merchants/answer/6149970" target="_blank" rel="noopener">Shopping ads policies overview</a></li>
+            <li><a href="https://support.google.com/merchants/answer/13479452" target="_blank" rel="noopener">Price &amp; availability policy</a></li>
+            <li><a href="https://support.google.com/merchants/answer/160008" target="_blank" rel="noopener">Website requirements</a></li>
+            <li><a href="https://web.dev/vitals/" target="_blank" rel="noopener">Core Web Vitals (web.dev)</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TẠO VÀ QUẢN LÝ PRODUCT FEED -->
+      <section class="card" id="product-feed" data-accent="green">
+        <div class="card-header">
+          <h2>TẠO VÀ QUẢN LÝ PRODUCT FEED</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#product-feed-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#product-feed-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="product-feed-content" hidden>
+          <ol>
+            <li>
+              <strong>Tuân thủ Product Data Specification</strong>
+              <ul>
+                <li>
+                  Trường bắt buộc:
+                  <ul>
+                    <li>id</li>
+                    <li>title (≤150 ký tự)</li>
+                    <li>description</li>
+                    <li>link</li>
+                    <li>image_link (nền trắng, không watermark)</li>
+                    <li>availability (in stock/out of stock/preorder)</li>
+                    <li>price (định dạng chuẩn + tiền tệ)</li>
+                    <li>brand</li>
+                    <li>gtin hoặc mpn (nếu có)</li>
+                    <li>google_product_category (ID hoặc tên đầy đủ)</li>
+                    <li>condition (new/used/refurbished)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Phương thức tạo feed</strong>
+              <ul>
+                <li>Google Sheets</li>
+                <li>File XML / CSV</li>
+                <li>API từ WooCommerce / Shopify</li>
+                <li>Qua bên thứ 3 (DataFeedWatch, Channable…)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lên lịch cập nhật dữ liệu</strong>
+              <ul>
+                <li>Daily</li>
+                <li>Hourly (nếu biến động giá/tồn kho nhanh)</li>
+                <li>Manual upload</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="card-sources" id="product-feed-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/merchants/answer/7052112" target="_blank" rel="noopener">Product data specification</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324468" target="_blank" rel="noopener">GTIN requirements</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener">Image requirements</a></li>
+            <li><a href="https://support.google.com/merchants/answer/3246284" target="_blank" rel="noopener">Automatic improvements</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- KIỂM DUYỆT SẢN PHẨM TRONG GMC -->
+      <section class="card" id="kiem-duyet-gmc" data-accent="yellow">
+        <div class="card-header">
+          <h2>KIỂM DUYỆT SẢN PHẨM TRONG GMC</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#kiem-duyet-gmc-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#kiem-duyet-gmc-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="kiem-duyet-gmc-content" hidden>
+          <ol>
+            <li>Google review sản phẩm</li>
+            <li>
+              Xử lý lỗi trong mục Diagnostics
+              <ul>
+                <li>Thiếu trường dữ liệu</li>
+                <li>Sai định dạng giá</li>
+                <li>Hình ảnh vi phạm</li>
+                <li>Sai category</li>
+              </ul>
+            </li>
+            <li>Tuân thủ chính sách quảng cáo Google Shopping</li>
+          </ol>
+        </div>
+        <div class="card-sources" id="kiem-duyet-gmc-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/merchants/answer/160491" target="_blank" rel="noopener">Diagnostics in Merchant Center</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6149970" target="_blank" rel="noopener">Shopping ads policies</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener">Image requirements</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CHẠY QUẢNG CÁO GOOGLE SHOPPING -->
+      <section class="card" id="chay-quang-cao" data-accent="red">
+        <div class="card-header">
+          <h2>CHẠY QUẢNG CÁO GOOGLE SHOPPING</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#chay-quang-cao-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#chay-quang-cao-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="chay-quang-cao-content" hidden>
+          <ol>
+            <li>Liên kết GMC với Google Ads</li>
+            <li>
+              Tạo chiến dịch
+              <ul>
+                <li>Shopping Campaign</li>
+              </ul>
+            </li>
+            <li>
+              Cài đặt ngân sách &amp; chiến lược bid
+              <ul>
+                <li>Manual CPC / ECPC</li>
+                <li>tROAS / Maximize Conversions</li>
+              </ul>
+            </li>
+            <li>Gắn conversion tracking (GA4 + Google Ads)</li>
+          </ol>
+        </div>
+        <div class="card-sources" id="chay-quang-cao-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/google-ads/answer/3455481" target="_blank" rel="noopener">Create a Shopping campaign</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/2979071" target="_blank" rel="noopener">Bidding strategies</a></li>
+            <li><a href="https://support.google.com/analytics/answer/1033961" target="_blank" rel="noopener">Link Google Ads and GA4</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TỐI ƯU HÓA & MỞ RỘNG -->
+      <section class="card" id="toi-uu-mo-rong" data-accent="blue">
+        <div class="card-header">
+          <h2>TỐI ƯU HÓA &amp; MỞ RỘNG</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#toi-uu-mo-rong-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#toi-uu-mo-rong-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="toi-uu-mo-rong-content" hidden>
+          <ol>
+            <li>
+              <strong>Sử dụng Custom Labels</strong>
+              <ul>
+                <li>Theo mùa (seasonal)</li>
+                <li>Theo giá (low/medium/high)</li>
+                <li>Theo biên lợi nhuận</li>
+                <li>Theo nhóm sản phẩm</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Tối ưu nội dung</strong>
+              <ul>
+                <li>Title: từ khóa chính + mô tả ngắn gọn</li>
+                <li>Description: thông tin sản phẩm + lợi ích</li>
+                <li>Hình ảnh: chất lượng cao, nhiều góc chụp</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Mở rộng danh mục sản phẩm</strong>
+              <ul>
+                <li>Evergreen</li>
+                <li>Seasonal</li>
+                <li>Trending</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="card-sources" id="toi-uu-mo-rong-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/merchants/answer/6324461" target="_blank" rel="noopener">Custom labels for Shopping</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324405" target="_blank" rel="noopener">Optimize your product data</a></li>
+            <li><a href="https://support.google.com/merchants/answer/6324350" target="_blank" rel="noopener">Image requirements</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MARKETING & PHÂN TÍCH DỮ LIỆU -->
+      <section class="card" id="marketing-phan-tich" data-accent="green">
+        <div class="card-header">
+          <h2>MARKETING &amp; PHÂN TÍCH DỮ LIỆU (GA4 + Google Ads)</h2>
+          <div class="actions">
+            <button class="btn toggle" data-target="#marketing-phan-tich-content">Mở rộng</button>
+            <button class="btn secondary toggle" data-target="#marketing-phan-tich-sources">Nguồn</button>
+          </div>
+        </div>
+        <div class="card-body" id="marketing-phan-tich-content" hidden>
+          <ol>
+            <li>
+              <strong>Thu thập dữ liệu</strong>
+              <ul>
+                <li>GA4: sự kiện view_item, add_to_cart, begin_checkout, purchase</li>
+                <li>Google Ads: impressions, clicks, conversions, cost, ROAS</li>
+                <li>Kết hợp dữ liệu Ads + GA4 để đồng bộ hành trình khách hàng</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Phân tích hiệu suất sản phẩm</strong>
+              <ul>
+                <li>Xác định sản phẩm có CTR cao nhưng chuyển đổi thấp → tối ưu trang sản phẩm</li>
+                <li>Xác định sản phẩm có ROAS cao → tăng ngân sách</li>
+                <li>Nhóm sản phẩm kém hiệu quả → giảm bid hoặc tạm dừng</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Phân tích hành vi người dùng</strong>
+              <ul>
+                <li>GA4 User Explorer: xem luồng truy cập từ click đến mua</li>
+                <li>Tỷ lệ rời trang (bounce rate) theo từng trang sản phẩm</li>
+                <li>Thời gian trung bình trên trang → đánh giá mức độ quan tâm</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Tối ưu chiến dịch dựa trên dữ liệu</strong>
+              <ul>
+                <li>Điều chỉnh từ khóa phủ định (Negative Keywords)</li>
+                <li>Chia ngân sách theo nhóm sản phẩm Custom Label</li>
+                <li>Test A/B hình ảnh và tiêu đề trong feed</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Báo cáo &amp; cải thiện liên tục</strong>
+              <ul>
+                <li>Tạo dashboard Looker Studio để theo dõi real-time</li>
+                <li>Báo cáo tuần/tháng để phát hiện xu hướng</li>
+                <li>Chuẩn bị sản phẩm theo mùa &amp; sự kiện lớn (seasonal prep)</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="card-sources" id="marketing-phan-tich-sources" hidden>
+          <ul class="sources">
+            <li><a href="https://support.google.com/analytics/answer/1033961" target="_blank" rel="noopener">Link Google Ads and GA4</a></li>
+            <li><a href="https://support.google.com/google-ads/answer/2472708" target="_blank" rel="noopener">Search terms report</a></li>
+            <li><a href="https://lookerstudio.google.com/" target="_blank" rel="noopener">Looker Studio</a></li>
+            <li><a href="https://support.google.com/analytics/answer/10069661" target="_blank" rel="noopener">GA4 events</a></li>
           </ul>
         </div>
       </section>
